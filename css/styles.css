@@ -34,22 +34,15 @@ main {
     margin: auto;
 }
 
-h1 {
-    font-family: "lust", serif;
-    font-weight: 700;
-    font-style: normal;  
-}
-
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p {
-    font-family: "source-sans-pro",sans-serif;
+body {
+    font-family: "source-sans-pro", verdana, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #020202;
+}
+
+a {
+    color:#817f7f;
 }
 
 h2,
@@ -60,10 +53,44 @@ h6 {
     font-weight:600px;
 }
 
+
+.return {
+    position: fixed;
+    padding: 20px;
+}
+
 .quote {
     font-style: italic;
 }
 
 .font-image {
     max-width: 350px;
+}
+
+.projects-container,
+.project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.project-item {
+    flex-direction: column;
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.rainy {
+    background-color: #f5f5f5;
+}
+
+.comscimus {
+    background-color: #f4f5f6;
+}
+
+.kingdom {
+    background-color: #0b3b2b;
 }
