@@ -11,26 +11,112 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!--<nav>
-        <ul>
+    <nav>
+        <!--<ul>
             <li><a class="name" href="index.html">Kiri Kvistnes</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>-->
+        </ul>-->
+    </nav>
     <a class="return" href="index.html">Return to home page</a>
     <main>
-        <h1>Community Science Museum - Report</h1>        
-    </main>
+        <h1>Community Science Museum - Report</h1>  
+        <a href="https://comscimus.netlify.app/">The Website</a>
+        <a href="https://github.com/kirikvi/SemesterProject-KiriKvistnes.git">GitHub repo</a>
 
-    <!--<footer>
-        <ul>
+        <h2>The Semester Project</h2>
+        <p>Updating this site was really time consuming, and there still is a lot I could change. I am not satisfied with this website, and if I could, I would start from scratch. 
+        I thought it was too dark, and I did not feel that the user flow were as smooth as it should have been.
+        Because of the limited amount of time, I focused on making the site better from the feedback I got, and making the site more dynamic with JavaScript and less
+        HTML files.</p>
+        <p>I made the following updates:</p>
+
+        <h2>WordPress</h2>
+        <p>I created a WordPress site, and downloaded the WooCommerce plugin to hold the events and exhibitions content. Then I did an API call to fetch the content from there. 
+        I could now delete the different event and exhibition files, and only have one to hold the content built with JavaScript.</p>
+        <p>I also added Lorem Ipsum text to add some more text to the pages.</p>
+
+        <h2>Feedback from tutors</h2>
+        <p>The feedback I got was:</p>
+
+        <p class="quote">"The home page header text (Explore Together) gets a bit lost behind the light parts of the image background and might be challenging to read for some users."</p>
+        <p>I redid the design and changed the header image, so this is not a problem anymore.</p> 
+
+        <p class="quote">"There seems to be some layout/alignment issues on the Explore page which needs some tweaking."</p>
+        <p>I removed the divs and flex styling on the page, because there really was not a reason to keep them. This is not a problem anymore.</p>
+
+        <p class="quote">"Can hover on Exhibitions and Events section but miss the link. Best to wrap the item that’s going to be hovered on with the link"</p>
+        <p>I wrapped the items in anchor tags (built with JavaScript), so the whole item is clickable now.</p>
+        
+        <p class="quote">"Would be good if you used classes to avoid repetition. .exhibition-item img, .special-item img, .left img Could just be one class. Would prefer you didn’t use IDs for styling, for example the below should just be one class. #cos-header, #evo-header, #rob-header, 
+            #eco-header, #bio-header, #night-header, #energetica-header, #fut-header { height: 550px; background-attachment: fixed; } IDs are useful for on page interactivity, 
+            while classes are best for styling. Worth noting that you can add multiple classes to the same element.
+            Would prefer a clearer class naming strategy than ‘left’ and ‘right’."</p> 
+        <p>I have made a lot of changes to the classnames and css to avoid repetition and unclear classnames. The files look much better now.</p>
+            
+        <p class="quote">"Nav has a div with class of nav inside it. We try use as few divs as possible, so perhaps styling the nav itself would have been best."</p>
+        <p>I went crazy with the divs on this project, and I have spent hours deleting them, hehe. I do not know why I ended up with so many divs, and many of them did not even have a 
+            function. I have learnt a lot from this, and know what to avoid in future projects.</p>
+
+        <h2>HTML</h2>
+        <p>I started by deleting all the individual event and exhibition files, and created one new file.</p>
+        <p>After that I looked over all the files left, and removed every unnessesary class/id and element, for example divs, like the div in the footer on the image below.
+            The HTML files were a complete mess, and did not have a clear hierarchy with parent-child-grandchild relationships.
+            It was so satisfying to look at the files when I was done cleaning. It looks much better now.</p>
+            
+        <p>I moved the content from the "visit"-page to the "index-page" to make the information about the museum more accessible to the users.
+        After that I deleted the "visit"-link and icon from the navigation menu, wich made the navigation more clear.</p>
+
+        <img src="images/extradiv.png" alt="a screen dump from visual studio code">
+        
+        <p>I changed the navigation code from a clot of anchor tags inside a div inside the nav, to an unordered list. It is easier now to read and understand the code.</p>
+
+        <img src="images/2021-06-01 (2).png" alt="a screen dump from visual studio code"> 
+        <img src="images/2021-06-01.png" alt="a screen dump from visual studio code">
+
+        <h2>The Design & CSS</h2>
+        <p>While deleting the unnessesary HTML-elements and classes, I deleted and adjusted the CSS-file to make sure I did not style elements that did not exist anymore.</p>
+        <p>I did some big changes with the design on the site. It went from this dark site with different styles from page to page, to a 
+            lighter site with the same general styling. I removed all "background-color" on the different pages, added a "linear-gradient"
+            style on the body, to give all the pages the same background-color.</p>
+
+        <p>I liked the look with the dark theme on the "before"-pages, but with the consistency in mind, 
+            I think it looks better now. I made it more "fun" and "child-friendly" with round edges on the navigation, images and forms.</p>
+
+        <p>I also changed the index page header image to an image from the inside of a museum. I believe it will be easier for the users to
+            understand that they are on the correct website.</p>
+        <img src="images/index-before.png" alt="a screen dump from the community scirence museum website" class="mobile"> 
+        <img src="images/index-after.png" alt="a screen dump from the community scirence museum website" class="mobile"> 
+        <img src="images/exhibit-before.png" alt="a screen dump from the community scirence museum website" class="mobile">   
+        <img src="images/exhibit-after.png" alt="a screen dump from the community scirence museum website" class="mobile">          
+        
+        <p>I wanted to add something more to the index page, so I added three boxes to make the content of the site even more accessible.</p>
+        <img src="images/2021-06-05 (4).png" alt="a screen dump from the community scirence museum website"> 
+
+        <h2>JavaScript</h2>
+        <p>I fetched the exhibition and event content with WP REST API and async function. I used an if statement to return the elements with the correct category (set in WP).
+        This way the user only sees the exhibitions on the exhibitions page, and the events on the event page.</p>
+        <img src="images/2021-06-05 (5).png" alt="a screen dump from visual studio code">
+
+        <p>I added a loader to indicate to the user that he/she should wait for the content to load.</p>
+        <img src="images/2021-06-05 (6).png" alt="a screen dump from the community scirence museum website">
+
+        <p>I made a contact form with form validation, to make the site more user friendy.</p>
+        <img src="images/2021-06-05 (7).png" alt="a screen dump from the community scirence museum website">
+        <img src="images/2021-06-05 (8).png" alt="a screen dump from the community scirence museum website">
+
+        </p>The last day before the deadline I wanted to try to make the search be functional, but struggled to make it work. I watched MJ's <a href="https://scrimba.com/scrim/cdqdnQUr">filter() method tutorial</a>, 
+        but I could not get it to work. I have learnt this year that I always put myself in the situation that I try new things in the weekends
+        when the tutors are not available. Shame on me. I will leave the code (even if it does not work) to hopefully get some feedback on where I did wrong.</p>        
+    </main>
+    <footer>
+        <!--<ul>
             <li><a href="https://www.instagram.com/kirikvi/">Instagram</a></li>
             <li><a href="https://www.linkedin.com/in/kiri-mortensen-kvistnes-b0626492/">LinkedIn</a></li>
             <li><a href="https://www.facebook.com/">Facebook</a></li>
-        </ul>
-        <p>© Kiri Kvistnes 2021. All rights reserved.</p>
-    </footer>-->
+        
+        <p>© Kiri Kvistnes 2021. All rights reserved.</p></ul>-->
+    </footer>
 </body>
 </html>

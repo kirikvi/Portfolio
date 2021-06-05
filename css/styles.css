@@ -39,6 +39,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #020202;
+    background-color: #f5f5f5;
 }
 
 a {
@@ -61,6 +62,7 @@ h6 {
 
 .quote {
     font-style: italic;
+    color: brown;
 }
 
 .font-image {
@@ -81,16 +83,13 @@ h6 {
     border-radius: 10px;
     margin: 15px;
     padding: 10px;
+    background-color: #fff;
 }
 
-.rainy {
-    background-color: #f5f5f5;
+.project-item:hover {
+    background-color: chocolate;
 }
 
-.comscimus {
-    background-color: #f4f5f6;
-}
-
-.kingdom {
-    background-color: #0b3b2b;
+.mobile {
+    width: 190px;
 }
