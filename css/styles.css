@@ -46,6 +46,11 @@ a {
     color:#817f7f;
 }
 
+.link {
+    margin: 10px;
+    padding: 10px;
+}
+
 h2,
 h3,
 h4,
