@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Kiri Kvistnes' Portfolio Page.">
+    <meta name="description" content="Kiri Kvistnes' Community Science Museum report.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiri Kvistnes - Portfolio</title>
+    <title>Community Science Museum Report</title>
     <!--STYLESHEETS-->
     <link rel="stylesheet" href="https://use.typekit.net/fwl5zgc.css">
     <link href="css/styles.css" rel="stylesheet">
@@ -19,14 +19,15 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>-->
     </nav>
-    <a class="return" href="index.html">Return to home page</a>
+    <a class="return" href="index.html">Back</a>
     <main>
         <h1>Community Science Museum - Report</h1>  
         <a href="https://comscimus.netlify.app/">The Website</a>
         <a href="https://github.com/kirikvi/SemesterProject-KiriKvistnes.git">GitHub repo</a>
 
         <h2>The Semester Project</h2>
-        <p>Updating this site was really time consuming, and there still is a lot I could change. I am not satisfied with this website, and if I could, I would start from scratch. 
+        <p>Updating this site was really time consuming, and there still is a lot I could change. 
+        I am not satisfied with this website, and if I could, I would start from scratch. 
         I thought it was too dark, and I did not feel that the user flow were as smooth as it should have been.
         Because of the limited amount of time, I focused on making the site better from the feedback I got, and making the site more dynamic with JavaScript and less
         HTML files.</p>
@@ -93,7 +94,20 @@
         
         <p>I wanted to add something more to the index page, so I added three boxes to make the content of the site even more accessible.</p>
         <img src="images/2021-06-05 (4).png" alt="a screen dump from the community scirence museum website"> 
+        
+        <h2>Simple css animations</h2>
+        <p>I still was not happy about the index page, and wanted to do somethin to give a better "first impression".
+            I made the index image larger to give a different first impression to the site, but then 
+            it was not easy to see that there is more content below it. I added a scroll 
+            indicator on top of the image, so let the user know to "scroll down". I came across <a href="https://codepen.io/JoeHastings/pen/QjrXOa">this codepen</a>, 
+            which was just what I had in mind.</p>           
 
+        <p>I also wanted to add some text on top of the image, and made it to slide in from the left (following 
+            <a href="https://www.html.am/html-codes/marquees/css-slide-in-text.cfm">these tips</a>) to make it more exiting. I wanted the text to
+            stand out, so I made it yellow, which looks good with the teal colour scheme on the site.
+            It took a few adjustments to make it look good with all screen sizes, but I think the first impression is much better now.</p>
+        <img src="images/2021-06-06.png" alt="a screen dump from the community scirence museum website">
+        
         <h2>JavaScript</h2>
         <p>I fetched the exhibition and event content with WP REST API and async function. I used an if statement to return the elements with the correct category (set in WP).
         This way the user only sees the exhibitions on the exhibitions page, and the events on the event page.</p>
@@ -106,9 +120,13 @@
         <img src="images/2021-06-05 (7).png" alt="a screen dump from the community scirence museum website">
         <img src="images/2021-06-05 (8).png" alt="a screen dump from the community scirence museum website">
 
-        </p>The last day before the deadline I wanted to try to make the search be functional, but struggled to make it work. I watched MJ's <a href="https://scrimba.com/scrim/cdqdnQUr">filter() method tutorial</a>, 
+        <p>I tried to make a form validation for the Night in the Museum form, but I could not make it work. Maybe there is a special way to do this when the form is made with HTML in JavaScript.</p>
+
+        </p>The last day before the deadline I wanted to try to make the search/filter function, but struggled to make it work. I watched MJ's <a href="https://scrimba.com/scrim/cdqdnQUr">filter() method tutorial</a>, 
         but I could not get it to work. I have learnt this year that I always put myself in the situation that I try new things in the weekends
-        when the tutors are not available. Shame on me. I will leave the code (even if it does not work) to hopefully get some feedback on where I did wrong.</p>        
+        when the tutors are not available. Shame on me. I will leave the code (even if it does not work) to hopefully get some feedback on where I did wrong.</p>  
+
+        
     </main>
     <footer>
         <!--<ul>
